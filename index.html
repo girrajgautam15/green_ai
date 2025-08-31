@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green AI Model Router</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+        }
+        .highlight-row {
+            background-color: rgba(16, 185, 129, 0.1); /* emerald-500 with opacity */
+            border-left: 4px solid #10b981; /* emerald-500 */
+        }
+    </style>
+</head>
+<body class="text-gray-300 antialiased">
+
+    <div class="min-h-screen flex flex-col items-center justify-center p-4 bg-slate-900">
+        <div class="w-full max-w-4xl mx-auto">
+
+            <!-- Header -->
+            <header class="text-center mb-8">
+                <div class="flex items-center justify-center gap-3 mb-2">
+                    <i data-lucide="leaf" class="w-10 h-10 text-emerald-400"></i>
+                    <h1 class="text-4xl md:text-5xl font-bold text-emerald-400">Green AI</h1>
+                </div>
+                <p class="text-lg text-slate-400">Find the most sustainable, cost-effective, and performant AI model for your task.</p>
+            </header>
+
+            <!-- Input Form -->
+            <main class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl shadow-slate-950/50">
+                <form id="ai-task-form">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2">
+                            <label for="user-prompt" class="block text-sm font-medium text-emerald-300 mb-2">Enter your task or prompt:</label>
+                            <textarea id="user-prompt" rows="4" class="w-full bg-slate-900 border border-slate-600 rounded-lg p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all duration-300 placeholder-slate-500" placeholder="e.g., Generate a python script to analyze a CSV and plot a histogram..."></textarea>
+                        </div>
+                        <div>
+                            <label for="complexity-override" class="block text-sm font-medium text-emerald-300 mb-2">Set Complexity (Optional)</label>
+                            <select id="complexity-override" class="w-full bg-slate-900 border border-slate-600 rounded-lg p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all duration-300">
+                                <option value="auto">Auto-Detect</option>
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                            <p class="text-xs text-slate-500 mt-2">Overrides the system's complexity classification.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <button type="submit" id="submit-button" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-emerald-900/50 transform hover:scale-105 flex items-center justify-center gap-2 mx-auto">
+                            <i data-lucide="zap" class="w-5 h-5"></i>
+                            Find Best Model
+                        </button>
+                    </div>
+                </form>
+            </main>
+
+            <!-- Results Section -->
+            <div id="results-section" class="mt-10 hidden">
+                <div id="loader" class="text-center hidden my-8">
+                    <div role="status" class="flex items-center justify-center gap-2 text-emerald-400">
+                        <svg aria-hidden="true" class="w-8 h-8 text-slate-600 animate-spin fill-emerald-500" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0492C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                        </svg>
+                        <span class="text-lg">Analyzing & Ranking Models...</span>
+                    </div>
+                </div>
+
+                <div id="results-output" class="hidden">
+                    <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 mb-8 text-center">
+                        <h3 class="text-lg font-semibold text-emerald-400 mb-2">Analysis Complete</h3>
+                        <p class="text-slate-400">
+                            Detected Task: <strong id="detected-task" class="text-emerald-300"></strong> |
+                            Applied Complexity: <strong id="applied-complexity" class="text-emerald-300"></strong>
+                        </p>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-center mb-6 text-emerald-400">Top 5 Recommended Models</h2>
+                    <div id="results-table" class="space-y-4">
+                        <!-- JS will populate this -->
+                    </div>
+                </div>
+                <div id="no-results" class="text-center hidden mt-8 bg-slate-800/50 p-6 rounded-lg">
+                    <i data-lucide="search-x" class="w-12 h-12 mx-auto text-amber-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-amber-400">No Suitable Models Found</h3>
+                    <p class="text-slate-400">We couldn't find any models that match the required task and complexity. Please try a different prompt.</p>
+                </div>
+                 <div id="error-message" class="text-center hidden mt-8 bg-red-900/50 p-6 rounded-lg border border-red-700">
+                    <i data-lucide="alert-triangle" class="w-12 h-12 mx-auto text-red-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-red-400">An Error Occurred</h3>
+                    <p class="text-slate-300">Could not connect to the backend server. Please ensure the server is running and try again.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // --- DOM Elements ---
+    const form = document.getElementById('ai-task-form');
+    const promptInput = document.getElementById('user-prompt');
+    const complexitySelect = document.getElementById('complexity-override');
+    const submitButton = document.getElementById('submit-button');
+    const resultsSection = document.getElementById('results-section');
+    const resultsOutput = document.getElementById('results-output');
+    const loader = document.getElementById('loader');
+    const tableContainer = document.getElementById('results-table');
+    const noResultsEl = document.getElementById('no-results');
+    const errorEl = document.getElementById('error-message');
+    const detectedTaskEl = document.getElementById('detected-task');
+    const appliedComplexityEl = document.getElementById('applied-complexity');
+
+    // --- API Endpoint ---
+    const API_URL = 'http://127.0.0.1:8000/rank_models';
+
+    /**
+     * Renders the results to the DOM.
+     */
+    function displayResults(data) {
+        tableContainer.innerHTML = ''; // Clear previous results
+
+        detectedTaskEl.textContent = data.task_label.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        appliedComplexityEl.textContent = data.complexity_label.charAt(0).toUpperCase() + data.complexity_label.slice(1);
+
+        const rankedModels = data.ranked_models;
+
+        if (!rankedModels || rankedModels.length === 0) {
+            noResultsEl.classList.remove('hidden');
+            return;
+        }
+
+        noResultsEl.classList.add('hidden');
+
+        rankedModels.forEach((model, index) => {
+            const isBest = model.rank === 1;
+            const scoreOutOf100 = (model.final_score * 100).toFixed(1);
+
+            const rowHTML = `
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-4 items-center p-4 rounded-lg border border-slate-700 bg-slate-800 ${isBest ? 'highlight-row' : ''} transition-all duration-300">
+                    <!-- Rank and Model Name -->
+                    <div class="col-span-2 md:col-span-2 flex items-center gap-4">
+                        <span class="flex-shrink-0 text-2xl font-bold ${isBest ? 'text-emerald-400' : 'text-slate-500'}">#${model.rank}</span>
+                        <div>
+                            <p class="font-bold text-lg ${isBest ? 'text-white' : 'text-slate-300'}">${model.model_name}</p>
+                            <p class="text-sm text-slate-400">${model.provider} - ${model.region}</p>
+                        </div>
+                    </div>
+
+                    <!-- Metrics (Desktop) -->
+                    <div class="hidden md:block text-center">
+                        <p class="text-xs text-slate-500">Latency</p>
+                        <p class="font-semibold text-lg">${model.latency} ms</p>
+                    </div>
+                    <div class="hidden md:block text-center">
+                        <p class="text-xs text-slate-500">CO₂ / M tokens</p>
+                        <p class="font-semibold text-lg">${model.co2} g</p>
+                    </div>
+                    <div class="hidden md:block text-center">
+                        <p class="text-xs text-slate-500">Avg Cost / M tokens</p>
+                        <p class="font-semibold text-lg">$${model.avg_cost.toFixed(2)}</p>
+                    </div>
+
+                    <!-- Score & Badge -->
+                    <div class="col-span-2 md:col-span-1 flex flex-col items-end justify-center">
+                        <div class="text-right">
+                           <p class="text-xs text-slate-500">Green Score</p>
+                           <p class="font-bold text-2xl text-emerald-400">${scoreOutOf100}</p>
+                        </div>
+                        ${isBest ? `<span class="mt-2 text-xs font-bold bg-emerald-500 text-white py-1 px-3 rounded-full">Best Choice</span>` : ''}
+                    </div>
+                     <!-- Metrics (Mobile) -->
+                     <div class="col-span-2 md:hidden grid grid-cols-3 gap-2 text-center mt-3 pt-3 border-t border-slate-700">
+                         <div>
+                             <p class="text-xs text-slate-500">Latency</p>
+                             <p class="font-semibold text-base">${model.latency} ms</p>
+                         </div>
+                         <div>
+                             <p class="text-xs text-slate-500">CO₂</p>
+                             <p class="font-semibold text-base">${model.co2} g</p>
+                         </div>
+                         <div>
+                             <p class="text-xs text-slate-500">Cost</p>
+                             <p class="font-semibold text-base">$${model.avg_cost.toFixed(2)}</p>
+                         </div>
+                    </div>
+                </div>
+            `;
+            tableContainer.innerHTML += rowHTML;
+        });
+    }
+
+    // --- Form Submission Event Listener ---
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const prompt = promptInput.value.trim();
+        const complexityOverride = complexitySelect.value;
+
+        if (!prompt) {
+            alert('Please enter a task or prompt.');
+            return;
+        }
+
+        // --- UI State Updates ---
+        submitButton.disabled = true;
+        submitButton.classList.add('opacity-50', 'cursor-not-allowed');
+        resultsSection.classList.remove('hidden');
+        resultsOutput.classList.add('hidden');
+        noResultsEl.classList.add('hidden');
+        errorEl.classList.add('hidden');
+        loader.classList.remove('hidden');
+
+        try {
+            // --- API Call to FastAPI Backend ---
+            const response = await fetch(API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    prompt: prompt,
+                    complexity_override: complexityOverride
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            // --- Display Results ---
+            displayResults(data);
+            resultsOutput.classList.remove('hidden');
+
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            errorEl.classList.remove('hidden');
+        } finally {
+            // --- Reset UI State ---
+            loader.classList.add('hidden');
+            submitButton.disabled = false;
+            submitButton.classList.remove('opacity-50', 'cursor-not-allowed');
+        }
+    });
+
+</script>
+
+</body>
+</html>
+

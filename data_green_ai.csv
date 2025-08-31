@@ -1,0 +1,697 @@
+user_input,classification_label,complexity,label_encoded,complexity_encoded
+Write a Python script to validate an Indian PAN card number format using regular expressions.,code_generation,low,0,1
+Generate a Java method to connect to the internal 'Customer360' API and fetch a customer's profile using their customer ID.,code_generation,medium,0,2
+"Create the complete Terraform configuration to deploy a new microservice for loan pre-qualification checks on AWS, including an EKS cluster, RDS instance, and security groups.",code_generation,high,0,0
+"Generate a Python function to calculate the Equated Monthly Instalment (EMI) for a given principal, interest rate, and tenure.",code_generation,low,0,1
+Write a JavaScript snippet for the frontend to disable the 'Submit' button on the funds transfer page after it has been clicked once to prevent duplicate transactions.,code_generation,medium,0,2
+"Develop a complete Spring Boot application skeleton for a new service that will handle recurring bill payments, including REST controllers, service layers, and repository interfaces.",code_generation,high,0,0
+Write a unit test in JUnit for the 'calculateCompoundInterest' method.,code_generation,medium,0,2
+Create a shell script that monitors the application log file for 'OutOfMemoryError' and sends an email alert to the support team.,code_generation,medium,0,2
+"Generate a C# class to represent a 'FixedDeposit' object with properties like Principal, InterestRate, MaturityDate, and a method to calculate maturity value.",code_generation,low,0,1
+Write a Python class to parse a CIBIL report in XML format and extract the credit score and existing trade lines.,code_generation,high,0,0
+"What was our bank's total transaction volume via UPI for August 14th, 2025?",data_analysis,low,3,1
+Analyze customer spending patterns on our 'Platinum' credit cards for the last quarter. Identify the top 5 merchant categories.,data_analysis,medium,3,2
+Perform a cohort analysis of customers acquired through the 'Diwali 2024' marketing campaign to determine their 6-month retention rate and average balance.,data_analysis,high,3,0
+Identify anomalies in ATM withdrawal patterns across all Chennai branches for the last 72 hours.,data_analysis,medium,3,2
+"What is the demographic breakdown (age, location) of customers applying for personal loans through our mobile app?",data_analysis,medium,3,2
+Correlate the loan default rate with the customer's CIBIL score at the time of application.,data_analysis,high,3,0
+Analyze the user navigation flow on our netbanking portal to identify the most common drop-off point during the bill payment process.,data_analysis,high,3,0
+Which branches have shown a decline in new savings account openings for three consecutive months?,data_analysis,medium,3,2
+Compare the transaction approval times for the Visa and Mastercard payment gateways during peak hours.,data_analysis,medium,3,2
+What percentage of our active customers are using the mobile banking app at least once a week?,data_analysis,low,3,1
+Generate a daily report of all failed NEFT transactions with their failure reason codes.,report_generation,medium,9,2
+Create a CSV report of all customers whose KYC is due for renewal in the next 30 days.,report_generation,low,9,1
+"Generate the monthly risk assessment summary for the board of directors, including key risk indicators (KRIs) for credit risk, market risk, and operational risk.",report_generation,high,9,0
+Produce a list of all employees who have exceeded their authorized trading limits in the treasury department this week.,report_generation,medium,9,2
+Generate a PDF statement for a customer's savings account for the last financial year.,report_generation,low,9,1
+"Create the final presentation slides for the quarterly business review, summarizing the performance of the retail banking division.",report_generation,high,9,0
+Generate a report on the uptime and performance SLAs for all our critical applications for the month of July 2025.,report_generation,medium,9,2
+Create a list of all corporate accounts with a balance greater than 2 crore.,report_generation,low,9,1
+Generate the RBI-mandated annual cybersecurity compliance report.,report_generation,high,9,0
+Summarize the attached 2-hour audio recording of the quarterly earnings call into key highlights and analyst questions.,text_summarization,high,14,0
+Provide a bullet-point summary of this customer complaint thread regarding repeated failed logins.,text_summarization,medium,14,2
+Summarize this news article about the latest RBI monetary policy changes.,text_summarization,low,14,1
+Condense this 15-page internal audit report into a one-page executive summary.,text_summarization,high,14,0
+Summarize the key findings from the attached user acceptance testing (UAT) report for the new mobile app release.,text_summarization,medium,14,2
+Give me a short summary of the IT department's weekly status meeting notes.,text_summarization,low,14,1
+Which of our financial products are most popular with customers under the age of 30?,natural_language_query,medium,6,2
+How many car loan applications did we receive from the Bangalore region last month?,natural_language_query,low,6,1
+Show me the top 10 corporate clients by their average daily account balance for the current fiscal year.,natural_language_query,high,6,0
+What is the average resolution time for customer complaints raised through the mobile app versus the call center?,natural_language_query,medium,6,2
+List all active employees in the compliance department.,natural_language_query,low,6,1
+Which marketing channel generated the most leads for home loans in the last quarter and what was its cost per acquisition?,natural_language_query,high,6,0
+"Write the technical documentation for the internal 'LoanEligibility' API, detailing all endpoints, request payloads, and possible response objects.",technical_documentation,medium,12,2
+Create a user guide for new employees on how to use our internal expense reporting software.,technical_documentation,low,12,1
+"Document the complete end-to-end data flow for our AML (Anti-Money Laundering) transaction monitoring system, including data sources, processing logic, and reporting outputs.",technical_documentation,high,12,0
+Add comments to this complex PL/SQL script to explain the business logic behind the interest calculation part.,technical_documentation,medium,12,2
+Create a 'Getting Started' guide for developers who want to use our new payments SDK.,technical_documentation,medium,12,2
+Document the disaster recovery plan for the core banking system database.,technical_documentation,high,12,0
+Calculate the Net Interest Margin (NIM) for the bank for the quarter ending June 2025.,financial_analysis,medium,5,2
+Perform a stress test on our home loan portfolio against a scenario of a 150 basis point interest rate increase and a 5% rise in unemployment.,financial_analysis,high,5,0
+What is the outstanding principal on loan account number 789456123?,financial_analysis,low,5,1
+Analyze the cash flow statements of 'ABC Corporation' for the last 3 years to assess their loan repayment capacity.,financial_analysis,medium,5,2
+Calculate the provision coverage ratio for our current pool of non-performing assets.,financial_analysis,medium,5,2
+Project the bank's capital adequacy ratio (CAR) for the next two years based on the current growth trajectory.,financial_analysis,high,5,0
+A customer is asking about a 'lien' marked on their account. Draft a clear response explaining what a lien is and why it might have been placed by the bank.,customer_support,medium,2,2
+A customer's credit card was used for a fraudulent transaction. Draft an empathetic response outlining the steps for dispute resolution and card blocking.,customer_support,high,2,0
+Where can I find my customer ID?,customer_support,low,2,1
+Draft an SMS to inform a customer that their cheque has bounced due to insufficient funds.,customer_support,low,2,1
+A customer is complaining about the long wait times at our T. Nagar branch. Draft a response acknowledging the issue and assuring them that feedback has been passed to the branch management.,customer_support,medium,2,2
+Draft a step-by-step guide for a senior citizen on how to register for netbanking for the first time.,customer_support,medium,2,2
+A customer received a phishing email pretending to be from our bank. Draft a response advising them not to click any links and to report the email.,customer_support,medium,2,2
+Review this transaction of 50 international wire transfers made from a single account in one day and check if it violates AML regulations.,compliance_check,high,1,0
+Does our new advertisement for personal loans clearly state the processing fee and other charges?,compliance_check,low,1,1
+Check if the latest changes to the core banking system code have been approved by the internal change advisory board (CAB).,compliance_check,medium,1,2
+Verify that all our call center employees have completed the mandatory annual training on data privacy and customer information security.,compliance_check,medium,1,2
+Scan this new vendor agreement to ensure it includes our standard clauses on data protection and liability.,compliance_check,medium,1,2
+Check this customer's account activity against their declared annual income to flag any potential discrepancies under KYC norms.,compliance_check,high,1,0
+Translate 'Please submit your KYC documents' into Marathi.,translation,low,15,1
+"Translate the full 'Privacy Policy' on our website from English to Hindi, ensuring the legal meaning is preserved.",translation,high,15,0
+Translate this customer email from Tamil to English.,translation,medium,15,2
+Translate the error message 'Invalid MPIN' into the top 5 regional languages spoken by our customers.,translation,medium,15,2
+What's the overall sentiment of Twitter mentions about our bank today?,sentiment_analysis,medium,10,2
+Is the sentiment of this review positive or negative: 'The loan process was smooth and the staff was very helpful.'?,sentiment_analysis,low,10,1
+"Analyze the sentiment of 10,000 customer feedback forms and generate a report on the key drivers of customer dissatisfaction.",sentiment_analysis,high,10,0
+What is the sentiment trend for our mobile app reviews over the last six months?,sentiment_analysis,medium,10,2
+Draft a social media post celebrating our bank winning the 'Best Digital Bank' award.,text_generation,medium,13,2
+Write a 300-word article on the importance of having an emergency fund.,text_generation,high,13,0
+Generate five different taglines for our new 'Youth Advantage' savings account.,text_generation,medium,13,2
+Write a formal letter to a high-value customer inviting them to an exclusive wealth management seminar.,text_generation,medium,13,2
+Create a script for a 30-second radio advertisement about our competitive home loan rates.,text_generation,high,13,0
+Write a welcome email for a new customer who just opened an account with us.,text_generation,low,13,1
+"Extract the IFSC code, bank name, and branch address from this unstructured text.",data_extraction,low,4,1
+"From the attached PDF of a company's annual report, extract the Revenue, Net Profit, and EPS.",data_extraction,high,4,0
+"Read this scanned PAN card image and extract the name, date of birth, and PAN number.",data_extraction,medium,4,2
+"Parse a directory of 1,000 unstructured customer emails and extract all mentioned account numbers.",data_extraction,high,4,0
+Extract the merchant name and transaction amount from this SMS alert: 'Your A/c XXX123 has been debited by Rs. 2500 at STARBUCKS.',data_extraction,low,4,1
+Write a script that automates the process of generating and emailing daily sales reports to branch managers.,process_automation,medium,8,2
+"Design an automated workflow to handle credit card limit increase requests: if the customer's credit score is above 750, auto-approve; otherwise, route to a credit analyst for manual review.",process_automation,high,8,0
+Create a rule in our ticketing system to automatically assign all tickets containing the word 'fraud' to the 'Risk & Security' team with high priority.,process_automation,low,8,1
+Automate the process of fetching daily stock prices and updating the value of our customers' investment portfolios.,process_automation,medium,8,2
+Explain our bank's policy on international fund transfers and the associated charges.,policy_explanation,medium,7,2
+What is the procedure for closing a savings account?,policy_explanation,low,7,1
+Explain to a customer in simple terms why the bank needs to do KYC verification periodically as per RBI guidelines.,policy_explanation,high,7,0
+What are the benefits of our 'Platinum Debit Card' compared to the 'Classic Debit Card'?,policy_explanation,medium,7,2
+Explain the bank's policy regarding locker access if the primary holder passes away.,policy_explanation,high,7,0
+Write a SQL query to get the names and email addresses of all customers who have a home loan balance greater than 50 lakhs.,sql_query,medium,11,2
+Write a SQL query to list all branches in Chennai.,sql_query,low,11,1
+Write a SQL query to calculate the total number of fraudulent transactions reported each month for the last year.,sql_query,medium,11,2
+Write a SQL query to find all employees who are also customers of the bank by joining the 'employees' and 'customers' tables on their PAN card number.,sql_query,medium,11,2
+Write a SQL query to identify customer accounts that have been inactive for more than 24 months but still have a positive balance.,sql_query,medium,11,2
+Create a SQL query to rank branches by the total value of personal loans disbursed in the current financial year.,sql_query,high,11,0
+Write a SQL query to fetch the last 5 transactions for account number 123456789012.,sql_query,low,11,1
+Write a SQL query to find the average CIBIL score of customers who have defaulted on a personal loan.,sql_query,medium,11,2
+"Write a Python script that takes a customer ID as input, calls the 'get_customer_details' API, and prints the formatted address.",code_generation,medium,0,2
+Analyze the hourly distribution of transactions at our top 10 ATMs by volume to identify patterns for cash replenishment.,data_analysis,medium,3,2
+Generate a weekly compliance checklist report for all branches.,report_generation,low,9,1
+Summarize this thread of emails between the legal team and a vendor regarding a contract dispute.,text_summarization,medium,14,2
+How many of our customers are registered for SMS alerts but not for email alerts?,natural_language_query,medium,6,2
+Document the process for a developer to request access to the UAT environment.,technical_documentation,low,12,1
+Calculate the return on assets (ROA) for the bank based on the last annual report.,financial_analysis,medium,5,2
+A customer is asking for their account statement for a period of 5 years. Draft a response explaining the process and any applicable charges for retrieving archived statements.,customer_support,medium,2,2
+"Check if this customer, who is applying for a business loan, is on any internal or regulatory watchlists.",compliance_check,high,1,0
+Translate 'Welcome to our new digital banking experience' into Telugu.,translation,low,15,1
+"What is the sentiment of our customers regarding the recent increase in service charges, based on social media comments?",sentiment_analysis,high,10,0
+Write a script for a call center agent to follow when a customer calls to report a lost debit card.,text_generation,medium,13,2
+"From this property rental agreement, extract the landlord's name, tenant's name, monthly rent, and lease end date.",data_extraction,medium,4,2
+Automate the process of sending a reminder SMS to customers three days before their loan EMI is due.,process_automation,low,8,1
+Explain the tax benefits of a home loan under Section 24 and Section 80C of the Income Tax Act.,policy_explanation,high,7,0
+Write a SQL query to find all customer accounts where the registered address city is 'Chennai' but the last transaction occurred from an ATM in 'Delhi'.,sql_query,high,11,0
+"Generate a Python class for a 'CreditCard' that includes methods for making a payment, checking the balance, and calculating finance charges.",code_generation,medium,0,2
+"Analyze the relationship between customer age and their preferred investment product (e.g., Mutual Funds, Fixed Deposits, Stocks).",data_analysis,high,3,0
+Generate a report of all outward remittances that are pending clearance for more than 48 hours.,report_generation,medium,9,2
+Summarize the new SEBI regulations on mutual fund expense ratios.,text_summarization,medium,14,2
+Show me a list of all current job openings in the technology division.,natural_language_query,low,6,1
+Create a tutorial document for our business clients on how to use the bulk upload feature on our corporate banking portal.,technical_documentation,medium,12,2
+Analyze the impact of the recent repo rate cut by the RBI on our bank's net interest margin.,financial_analysis,high,5,0
+A customer wants to update their nominee details. Draft a response guiding them on the required documents and procedures.,customer_support,low,2,1
+Review this new insurance product brochure to ensure it doesn't make any misleading claims and adheres to IRDAI advertisement guidelines.,compliance_check,medium,1,2
+Translate 'Loan approved' into Kannada and Malayalam.,translation,low,15,1
+What is the prevailing sentiment in the news articles published about our bank this month?,sentiment_analysis,medium,10,2
+"Generate a personalized email to a customer whose fixed deposit is about to mature, outlining their options for renewal or withdrawal.",text_generation,medium,13,2
+Extract all the director names and their DINs from the attached Ministry of Corporate Affairs (MCA) filing PDF.,data_extraction,high,4,0
+Create an automation that generates a ticket for the IT helpdesk whenever a user's corporate netbanking account is locked after multiple failed login attempts.,process_automation,medium,8,2
+Explain our bank's 'Floating Rate' home loan product and how the EMI changes when the repo rate changes.,policy_explanation,medium,7,2
+Write a SQL query to list the top 10 customers by the number of transactions in the last 30 days.,sql_query,medium,11,2
+Write a Python script to scrape currency exchange rates from a financial website and store them in a database.,code_generation,medium,0,2
+"Analyze the performance of our different digital marketing campaigns (Google Ads, Facebook Ads) in terms of customer acquisition cost.",data_analysis,medium,3,2
+Generate a compliance certificate stating that the bank adheres to the PCI DSS standard for cardholder data security.,report_generation,high,9,0
+Summarize the attached legal opinion on the enforceability of electronic signatures on loan agreements.,text_summarization,high,14,0
+How many demat accounts were opened in the last month?,natural_language_query,low,6,1
+Create a troubleshooting guide for common errors encountered by merchants using our point-of-sale (POS) terminals.,technical_documentation,medium,12,2
+"Evaluate the creditworthiness of a startup applying for a working capital loan, based on their business plan and financial projections.",financial_analysis,high,5,0
+A customer wants to set up an auto-debit for their mutual fund SIP. Draft a clear set of instructions for them to follow on our mobile app.,customer_support,medium,2,2
+Check if our loan recovery agents are adhering to the RBI's Fair Practice Code in their communications with overdue customers.,compliance_check,high,1,0
+Translate 'Insufficient balance' into Bengali and Punjabi.,translation,low,15,1
+Analyze the sentiment of the last 100 call center conversations for the credit card department to identify agent training needs.,sentiment_analysis,high,10,0
+Generate a series of social media posts for 'Financial Literacy Week'.,text_generation,medium,13,2
+"From a folder of scanned invoices, extract the invoice number, date, and total amount for each invoice.",data_extraction,medium,4,2
+Automate the daily reconciliation process between our core banking system and the Visa network transaction logs.,process_automation,high,8,0
+Explain the 'cooling-off period' for newly added beneficiaries in netbanking.,policy_explanation,low,7,1
+Write a SQL query to identify customers who hold both a savings account and a demat account but have not made any trades in the last six months.,sql_query,high,11,0
+"Generate a secure, random 8-character password containing uppercase letters, lowercase letters, numbers, and special symbols.",code_generation,low,0,1
+Analyze the drop-off rates at each stage of our online account opening process.,data_analysis,medium,3,2
+Generate an ad-hoc report of all forex transactions conducted by NRI customers in the last 90 days.,report_generation,medium,9,2
+Summarize the minutes of the last IT steering committee meeting.,text_summarization,medium,14,2
+What's the current interest rate for a 5-year car loan?,natural_language_query,low,6,1
+Create a document explaining our bank's internal coding standards for Python development.,technical_documentation,medium,12,2
+Assess the financial health of a corporate borrower by analyzing their balance sheet and profit and loss statement.,financial_analysis,medium,5,2
+A customer is reporting an unauthorized transaction. Guide them through the process of blocking their card and filing a chargeback.,customer_support,high,2,0
+Review our website's accessibility to ensure it complies with WCAG 2.1 guidelines for people with disabilities.,compliance_check,medium,1,2
+"Translate the key features of our mobile banking app for a marketing campaign in rural areas, using simple Hindi.",translation,medium,15,2
+What is the overall sentiment score for our bank on social media platforms this quarter?,sentiment_analysis,medium,10,2
+Write a press release about our bank launching a new set of eco-friendly 'Green Deposits'.,text_generation,high,13,0
+"Extract all the financial figures (Revenue, Expenses, Profit) from the text of a quarterly earnings report.",data_extraction,high,4,0
+Create an automation to escalate a customer complaint ticket if it has not been resolved within the defined SLA of 48 hours.,process_automation,medium,8,2
+Explain the terms 'CIBIL score' and 'credit report' to a first-time borrower.,policy_explanation,medium,7,2
+Write a SQL query to calculate the average time it takes for a customer to complete their first transaction after opening an account.,sql_query,high,11,0
+Write a Python script to connect to an SFTP server and download all files with a '.csv' extension from a specific directory.,code_generation,medium,0,2
+Analyze the effectiveness of the cross-sell recommendations made by our CRM system.,data_analysis,medium,3,2
+"Generate a monthly dashboard report for the marketing team showing website traffic, lead generation, and conversion rates.",report_generation,medium,9,2
+Summarize the contents of a zip file containing multiple text documents.,text_summarization,low,14,1
+How many branches do we have in the state of Tamil Nadu?,natural_language_query,low,6,1
+"Create a guide on how to integrate with our new payments API, including authentication and code samples.",technical_documentation,high,12,0
+Calculate the liquidity coverage ratio (LCR) for the bank as of today.,financial_analysis,high,5,0
+A customer's loan EMI auto-debit has failed. Draft a polite SMS informing them of the failure and requesting them to make the payment manually to avoid late fees.,customer_support,medium,2,2
+Ensure our cloud server configurations comply with the CIS security benchmarks.,compliance_check,high,1,0
+Translate 'Your account has been credited' into Gujarati.,translation,low,15,1
+Analyze the sentiment of a customer's email to determine if they are a churn risk.,sentiment_analysis,medium,10,2
+Generate a welcome kit document for new wealth management clients.,text_generation,medium,13,2
+Extract the policy number and maturity date from an insurance policy document.,data_extraction,medium,4,2
+Automate the generation of Form 16A for our vendors and fixed deposit customers.,process_automation,medium,8,2
+Explain what a 'Repo Rate' is and how it affects a customer's home loan EMI.,policy_explanation,high,7,0
+Write a SQL query to list all accounts that have had more than 100 transactions in a single day.,sql_query,medium,11,2
+Write a Python script to automate loan approval decisions,code_generation,medium,0,2
+Summarize the quarterly financial performance report,text_summarization,medium,14,2
+Analyze transaction data for potential fraud patterns,data_analysis,high,3,0
+Generate a response for a customer asking about loan terms,customer_support,low,2,1
+Build a financial model to forecast bond yields,financial_analysis,high,5,0
+Debug a Python script for processing wire transfers,code_generation,medium,0,2
+Explain the new anti-money laundering regulations clearly,policy_explanation,medium,7,2
+Translate a loan contract into French for a client,translation,medium,15,2
+Write API documentation for a new banking platform,technical_documentation,medium,12,2
+Extract customer details from a scanned mortgage form,data_extraction,medium,4,2
+Create a marketing email for a high-yield savings account,text_generation,low,13,1
+Assess the credit risk of a corporate loan portfolio,financial_analysis,high,5,0
+Write a SQL query to retrieve active customer accounts,sql_query,medium,11,2
+Summarize feedback from a customer satisfaction survey,text_summarization,medium,14,2
+Automate the creation of daily compliance reports,process_automation,high,8,0
+Answer a customer query about credit card interest rates,customer_support,low,2,1
+Analyze sentiment in online customer reviews,sentiment_analysis,medium,10,2
+Write a SQL query to calculate monthly loan repayments,sql_query,medium,11,2
+Create a user guide for a mobile banking app,technical_documentation,medium,12,2
+Generate a cash flow projection for the next six months,financial_analysis,high,5,0
+Check a vendor contract for regulatory compliance,compliance_check,high,1,0
+Translate internal audit guidelines into Spanish,translation,medium,15,2
+Write a Python script to categorize transactions by type,code_generation,medium,0,2
+Summarize a 60-page regulatory compliance manual,text_summarization,high,14,0
+Answer a query about mortgage eligibility requirements,customer_support,low,2,1
+Generate a report on stock market trends for clients,report_generation,high,9,0
+Debug a JavaScript function for a payment portal,code_generation,medium,0,2
+Extract payment terms from a supplier agreement,data_extraction,medium,4,2
+Write a chatbot script for handling account inquiries,text_generation,medium,13,2
+Perform a statistical analysis of credit card defaults,data_analysis,high,3,0
+Create a technical manual for a fraud detection tool,technical_documentation,high,12,0
+Translate a financial statement into Japanese,translation,medium,15,2
+Write a SQL query to identify inactive accounts,sql_query,medium,11,2
+Summarize minutes from a financial planning meeting,text_summarization,medium,14,2
+Generate a compliance checklist for internal audits,compliance_check,high,1,0
+Answer a customer question about account fees,customer_support,low,2,1
+Analyze spending patterns for premium account holders,data_analysis,medium,3,2
+Write a script to automate customer email reminders,process_automation,medium,8,2
+Create a report on annual financial performance,report_generation,high,9,0
+Check a loan agreement for legal inconsistencies,compliance_check,high,1,0
+Translate a customer notice into German,translation,medium,15,2
+Write a SQL query to track high-value transactions,sql_query,medium,11,2
+Summarize a whitepaper on blockchain in banking,text_summarization,high,14,0
+Generate a response to a customer complaint about fees,customer_support,medium,2,2
+Perform a risk assessment for a new investment fund,financial_analysis,high,5,0
+Write documentation for a transaction monitoring system,technical_documentation,high,12,0
+Extract account numbers from a batch of invoices,data_extraction,medium,4,2
+Answer a query about loan repayment schedules,customer_support,low,2,1
+Analyze sentiment in customer support chat logs,sentiment_analysis,medium,10,2
+Generate a report on customer retention metrics,report_generation,high,9,0
+Write a Python script to validate customer KYC data,code_generation,medium,0,2
+Create a SQL query to summarize branch revenue,sql_query,medium,11,2
+Explain recent changes to Basel III regulations,policy_explanation,medium,7,2
+Answer a question about credit card reward points,customer_support,low,2,1
+Analyze loan default rates across regions,data_analysis,high,3,0
+Translate a compliance report into Portuguese,translation,medium,15,2
+Write a script to automate monthly report generation,process_automation,medium,8,2
+Generate a FAQ for online banking security features,text_generation,medium,13,2
+Check a financial model for calculation errors,compliance_check,high,1,0
+Extract payment schedules from a lease agreement,data_extraction,medium,4,2
+Answer a question about wire transfer limits,customer_support,low,2,1
+Summarize a compliance audit findings report,text_summarization,high,14,0
+Write a Python function to calculate loan interest,code_generation,medium,0,2
+Generate a customer support email for login issues,text_generation,low,13,1
+Analyze sentiment in customer feedback emails,sentiment_analysis,medium,10,2
+Write a SQL query to monitor account overdrafts,sql_query,medium,11,2
+Create a technical guide for a payment processing API,technical_documentation,high,12,0
+Translate a loan agreement into Korean,translation,medium,15,2
+Write a script to automate transaction reconciliations,process_automation,medium,8,2
+Generate a financial forecast for a regional branch,financial_analysis,high,5,0
+Check a policy for anti-fraud compliance,compliance_check,high,1,0
+Extract customer data from a signed contract,data_extraction,medium,4,2
+Answer a query about ATM withdrawal fees,customer_support,low,2,1
+Summarize a 40-page risk management policy,text_summarization,high,14,0
+Write a SQL query to analyze savings account growth,sql_query,medium,11,2
+Generate a customer guide for mobile app features,text_generation,medium,13,2
+Analyze market sentiment for a new stock offering,sentiment_analysis,high,10,0
+Translate a banking memo into Mandarin,translation,medium,15,2
+Write a script to automate compliance notifications,process_automation,high,8,0
+Create a summary of client feedback surveys,text_summarization,medium,14,2
+Answer a query about loan application procedures,customer_support,low,2,1
+Generate a risk assessment for a corporate bond,financial_analysis,high,5,0
+Write documentation for a customer database system,technical_documentation,high,12,0
+Extract terms from a personal loan contract,data_extraction,medium,4,2
+Debug a Python script for payment validation,code_generation,medium,0,2
+Summarize a regulatory update on data privacy,text_summarization,medium,14,2
+Answer a question about credit card balance transfers,customer_support,low,2,1
+Analyze transaction data for money laundering risks,data_analysis,high,3,0
+Translate a financial summary into Arabic,translation,medium,15,2
+Write a SQL query to track loan delinquency rates,sql_query,medium,11,2
+Generate a report on branch operational efficiency,report_generation,high,9,0
+Check a vendor agreement for legal compliance,compliance_check,high,1,0
+Extract account details from a credit application,data_extraction,medium,4,2
+Create a customer support response for a disputed charge,customer_support,low,2,1
+Summarize a report on economic trends,text_summarization,high,14,0
+Write a Python function to assess credit risk,code_generation,medium,0,2
+Analyze sentiment in customer support tickets,sentiment_analysis,medium,10,2
+Generate a technical manual for a teller system,technical_documentation,high,12,0
+Translate a banking notice into Russian,translation,medium,15,2
+Write a script to automate data imports,process_automation,medium,8,2
+Generate a compliance summary for external auditors,report_generation,high,9,0
+Answer a query about online banking security,customer_support,low,2,1
+Analyze deposit trends for high-net-worth clients,data_analysis,high,3,0
+Check a financial forecast for regulatory errors,compliance_check,high,1,0
+Extract payment terms from a vendor contract,data_extraction,medium,4,2
+Write a SQL query to summarize customer balances,sql_query,medium,11,2
+Summarize a risk analysis for a new mortgage product,text_summarization,high,14,0
+Generate a customer email for a new credit card offer,text_generation,low,13,1
+Translate a compliance manual into Italian,translation,medium,15,2
+Write a script to automate payment confirmations,process_automation,medium,8,2
+Analyze sentiment in customer complaint letters,sentiment_analysis,medium,10,2
+Create a report on loan portfolio performance,report_generation,high,9,0
+Check a loan contract for Basel III compliance,compliance_check,high,1,0
+Extract data from a mortgage application form,data_extraction,medium,4,2
+Answer a query about account verification processes,customer_support,low,2,1
+Summarize a compliance policy for employees,text_summarization,medium,14,2
+Write a SQL query to analyze transaction frequencies,sql_query,medium,11,2
+Generate a risk profile for a new client,financial_analysis,high,5,0
+Translate a customer agreement into Portuguese,translation,medium,15,2
+Write documentation for a fraud monitoring system,technical_documentation,high,12,0
+Analyze credit card usage patterns,data_analysis,high,3,0
+Create a customer support response for a payment error,customer_support,medium,2,2
+Check a contract for GDPR compliance,compliance_check,high,1,0
+Extract payment schedules from a commercial loan,data_extraction,medium,4,2
+Answer a question about savings account benefits,customer_support,low,2,1
+Summarize a report on global market trends,text_summarization,high,14,0
+Write a Python function to validate loan applications,code_generation,medium,0,2
+Analyze sentiment in customer support emails,sentiment_analysis,medium,10,2
+Generate a technical guide for a banking database,technical_documentation,high,12,0
+Translate a customer memo into Japanese,translation,medium,15,2
+Write a script to automate customer account updates,process_automation,medium,8,2
+Generate a report on customer acquisition costs,report_generation,high,9,0
+Answer a query about credit card fraud protection,customer_support,low,2,1
+Analyze loan repayment patterns by demographic,data_analysis,high,3,0
+Check a financial model for regulatory violations,compliance_check,high,1,0
+Extract terms from a business loan agreement,data_extraction,medium,4,2
+Write a SQL query to identify frequent depositors,sql_query,medium,11,2
+Summarize a risk management strategy document,text_summarization,high,14,0
+Generate a customer guide for online payment systems,text_generation,medium,13,2
+Analyze market sentiment for a corporate bond,sentiment_analysis,high,10,0
+Translate a banking policy into Hindi,translation,medium,15,2
+Write a script to automate fraud alerts,process_automation,high,8,0
+Create a summary of customer feedback data,text_summarization,medium,14,2
+Answer a query about credit card payment deadlines,customer_support,low,2,1
+Generate a risk report for a new savings product,financial_analysis,high,5,0
+Write documentation for a payment processing system,technical_documentation,high,12,0
+Extract key clauses from a financial contract,data_extraction,medium,4,2
+Debug a SQL query for retrieving loan data,sql_query,medium,11,2
+Summarize a regulatory guideline on data security,text_summarization,medium,14,2
+Answer a question about loan prepayment options,customer_support,low,2,1
+Analyze transaction data for suspicious activities,data_analysis,high,3,0
+Translate a financial report into Spanish,translation,medium,15,2
+Write a script to automate transaction categorizations,process_automation,medium,8,2
+Generate a report on branch financial metrics,report_generation,high,9,0
+Check a policy for data privacy compliance,compliance_check,high,1,0
+Extract account details from a lease document,data_extraction,medium,4,2
+Create a customer support response for a login issue,customer_support,low,2,1
+Summarize a financial forecast report,text_summarization,high,14,0
+Write a Python function to validate customer data,code_generation,medium,0,2
+Analyze sentiment in customer service calls,sentiment_analysis,medium,10,2
+Generate a technical manual for a loan processing system,technical_documentation,high,12,0
+Translate a banking notice into Korean,translation,medium,15,2
+Write a SQL query to track credit card transactions,sql_query,medium,11,2
+Generate a compliance report for a new policy,report_generation,high,9,0
+Answer a query about account transfer limits,customer_support,low,2,1
+Analyze deposit trends for corporate accounts,data_analysis,high,3,0
+Check a financial statement for accuracy,compliance_check,high,1,0
+Extract payment terms from a lease contract,data_extraction,medium,4,2
+Write a script to automate transaction validations,process_automation,medium,8,2
+Summarize a risk assessment for a new fund,text_summarization,high,14,0
+Generate a customer email for a new banking service,text_generation,low,13,1
+Translate a compliance notice into Mandarin,translation,medium,15,2
+Write a SQL query to monitor transaction anomalies,sql_query,high,11,0
+Analyze sentiment in customer feedback forms,sentiment_analysis,medium,10,2
+Create a report on branch revenue performance,report_generation,high,9,0
+Check a loan agreement for legal errors,compliance_check,high,1,0
+Extract data from a customer onboarding form,data_extraction,medium,4,2
+Answer a query about credit card interest rates,customer_support,low,2,1
+Summarize a compliance training manual,text_summarization,medium,14,2
+Write a Python function to calculate risk scores,code_generation,medium,0,2
+Generate a risk profile for a retail banking client,financial_analysis,high,5,0
+Translate a customer contract into Russian,translation,medium,15,2
+Write documentation for a transaction validation system,technical_documentation,high,12,0
+Analyze loan approval rates by branch,data_analysis,high,3,0
+Create a customer support response for a fraud concern,customer_support,medium,2,2
+Check a financial report for calculation errors,compliance_check,high,1,0
+Extract terms from a commercial agreement,data_extraction,medium,4,2
+Answer a question about savings account restrictions,customer_support,low,2,1
+Summarize a report on financial regulations,text_summarization,high,14,0
+Write a SQL query to track customer loan balances,sql_query,medium,11,2
+Generate a customer guide for online banking setup,text_generation,medium,13,2
+Analyze market sentiment for a new bond issue,sentiment_analysis,high,10,0
+Translate a banking policy into Arabic,translation,medium,15,2
+Write a script to automate compliance monitoring,process_automation,high,8,0
+Create a summary of customer complaint data,text_summarization,medium,14,2
+Answer a query about loan approval timelines,customer_support,low,2,1
+Generate a risk report for a new loan program,financial_analysis,high,5,0
+Write documentation for a transaction processing API,technical_documentation,high,12,0
+Extract key terms from a loan contract,data_extraction,medium,4,2
+Debug a SQL query for transaction analysis,sql_query,medium,11,2
+Summarize a regulatory update on banking laws,text_summarization,medium,14,2
+Answer a question about credit card fraud alerts,customer_support,low,2,1
+Analyze transaction data for compliance risks,data_analysis,high,3,0
+Translate a financial statement into Portuguese,translation,medium,15,2
+Write a script to automate payment validations,process_automation,medium,8,2
+Generate a report on customer acquisition trends,report_generation,high,9,0
+Check a policy for anti-money laundering compliance,compliance_check,high,1,0
+Extract account details from a mortgage contract,data_extraction,medium,4,2
+Create a customer support response for a billing error,customer_support,low,2,1
+Summarize a financial analysis for stakeholders,text_summarization,high,14,0
+Write a Python function to validate transaction records,code_generation,medium,0,2
+Analyze sentiment in customer complaint emails,sentiment_analysis,medium,10,2
+Generate a technical manual for a banking system,technical_documentation,high,12,0
+Translate a banking notice into Spanish,translation,medium,15,2
+Write a SQL query to calculate credit card balances,sql_query,medium,11,2
+Generate a compliance report for internal review,report_generation,high,9,0
+Answer a query about account security protocols,customer_support,low,2,1
+Analyze deposit patterns for small business accounts,data_analysis,high,3,0
+Check a financial model for legal inaccuracies,compliance_check,high,1,0
+Extract payment terms from a business contract,data_extraction,medium,4,2
+Write a script to automate customer notifications,process_automation,medium,8,2
+Summarize a risk management policy update,text_summarization,high,14,0
+Generate a customer email for a new savings plan,text_generation,low,13,1
+Translate a compliance guideline into Japanese,translation,medium,15,2
+Write a SQL query to analyze loan repayment patterns,sql_query,medium,11,2
+Analyze market sentiment for a stock portfolio,sentiment_analysis,high,10,0
+Generate a risk profile for a corporate client,financial_analysis,high,5,0
+Write documentation for a banking API integration,technical_documentation,high,12,0
+Extract terms from a vendor agreement,data_extraction,medium,4,2
+Answer a question about loan interest calculations,customer_support,low,2,1
+Summarize a report on economic forecasts,text_summarization,high,14,0
+Write a Python script to validate customer records,code_generation,medium,0,2
+Analyze sentiment in customer support chats,sentiment_analysis,medium,10,2
+Generate a report on branch financial performance,report_generation,high,9,0
+Check a loan contract for regulatory errors,compliance_check,high,1,0
+Extract data from a customer application form,data_extraction,medium,4,2
+Create a customer support response for a payment dispute,customer_support,low,2,1
+Summarize a compliance policy for auditors,text_summarization,medium,14,2
+Write a SQL query to track customer spending trends,sql_query,medium,11,2
+Generate a risk report for a new credit product,financial_analysis,high,5,0
+Translate a customer contract into Mandarin,translation,medium,15,2
+Write a script to automate fraud detection reports,process_automation,high,8,0
+Analyze loan default trends by region,data_analysis,high,3,0
+Create a technical manual for a payment platform,technical_documentation,high,12,0
+Extract key clauses from a financial agreement,data_extraction,medium,4,2
+Debug a SQL query for branch performance analysis,sql_query,medium,11,2
+Summarize a regulatory guideline on fraud prevention,text_summarization,medium,14,2
+Answer a question about credit card payment options,customer_support,low,2,1
+Analyze transaction data for regulatory compliance,data_analysis,high,3,0
+Translate a financial report into Korean,translation,medium,15,2
+Write a script to automate compliance reporting,process_automation,high,8,0
+Generate a report on loan portfolio risks,report_generation,high,9,0
+Check a policy for GDPR compliance,compliance_check,high,1,0
+Extract account details from a signed contract,data_extraction,medium,4,2
+Create a customer support response for a fraud alert,customer_support,low,2,1
+Summarize a financial performance analysis,text_summarization,high,14,0
+Write a Python function to calculate credit risk,code_generation,medium,0,2
+Generate a technical manual for a banking platform,technical_documentation,high,12,0
+Write a SQL query to track branch transaction volumes,sql_query,medium,11,2
+Generate a compliance report for regulatory audits,report_generation,high,9,0
+Answer a query about online banking authentication,customer_support,low,2,1
+Analyze deposit trends for retail accounts,data_analysis,high,3,0
+Check a financial statement for compliance errors,compliance_check,high,1,0
+Extract payment terms from a lease agreement,data_extraction,medium,4,2
+Summarize a risk assessment for a new product,text_summarization,high,14,0
+Generate a customer email for a new banking feature,text_generation,low,13,1
+Translate a compliance notice into Arabic,translation,medium,15,2
+Write a SQL query to summarize customer loan data,sql_query,medium,11,2
+Analyze market sentiment for a new stock issue,sentiment_analysis,high,10,0
+Generate a risk profile for a retail client,financial_analysis,high,5,0
+Write documentation for a fraud detection system,technical_documentation,high,12,0
+Answer a query about credit card interest calculations,customer_support,low,2,1
+Summarize a compliance training guide,text_summarization,medium,14,2
+Write a Python script to validate transaction data,code_generation,medium,0,2
+Analyze sentiment in customer feedback surveys,sentiment_analysis,medium,10,2
+Generate a report on branch operational performance,report_generation,high,9,0
+Check a loan contract for AML compliance,compliance_check,high,1,0
+Extract terms from a commercial loan agreement,data_extraction,medium,4,2
+Summarize a report on market volatility,text_summarization,high,14,0
+Write a SQL query to calculate loan repayment totals,sql_query,medium,11,2
+Generate a customer guide for loan repayment options,text_generation,medium,13,2
+Analyze loan repayment trends by customer segment,data_analysis,high,3,0
+Translate a banking policy into Portuguese,translation,medium,15,2
+Write a script to automate compliance checks,process_automation,high,8,0
+Create a summary of customer satisfaction data,text_summarization,medium,14,2
+Answer a query about loan repayment terms,customer_support,low,2,1
+Generate a risk report for a new investment product,financial_analysis,high,5,0
+Write documentation for a payment processing API,technical_documentation,high,12,0
+Extract key clauses from a loan agreement,data_extraction,medium,4,2
+Debug a SQL query for customer account analysis,sql_query,medium,11,2
+Summarize a regulatory update on data protection,text_summarization,medium,14,2
+Answer a question about credit card rewards eligibility,customer_support,low,2,1
+Analyze transaction data for fraud detection,data_analysis,high,3,0
+Translate a financial statement into Spanish,translation,medium,15,2
+Generate a report on customer retention trends,report_generation,high,9,0
+Check a policy for data protection compliance,compliance_check,high,1,0
+Extract account details from a loan application,data_extraction,medium,4,2
+Create a customer support response for a payment issue,customer_support,low,2,1
+Summarize a financial risk assessment report,text_summarization,high,14,0
+Write a Python function to validate customer records,code_generation,medium,0,2
+Analyze sentiment in customer complaint forms,sentiment_analysis,medium,10,2
+Translate a banking notice into Mandarin,translation,medium,15,2
+Write a SQL query to track customer deposits,sql_query,medium,11,2
+Generate a compliance report for regulatory review,report_generation,high,9,0
+Answer a query about mobile banking security features,customer_support,low,2,1
+Analyze deposit trends for small business accounts,data_analysis,high,3,0
+Generate a customer email for a new loan offer,text_generation,low,13,1
+Translate a compliance notice into Japanese,translation,medium,15,2
+Write a SQL query to analyze customer spending trends,sql_query,medium,11,2
+Analyze market sentiment for a bond portfolio,sentiment_analysis,high,10,0
+Extract terms from a financial contract,data_extraction,medium,4,2
+Answer a question about savings account terms,customer_support,low,2,1
+Write a Python script to calculate credit risk,code_generation,medium,0,2
+Analyze sentiment in customer support interactions,sentiment_analysis,medium,10,2
+Summarize a compliance policy for new employees,text_summarization,medium,14,2
+Write a SQL query to track customer loan payments,sql_query,medium,11,2
+Translate a customer contract into Korean,translation,medium,15,2
+Analyze loan default rates by customer segment,data_analysis,high,3,0
+Translate a financial report into Portuguese,translation,medium,15,2
+Generate a report on loan portfolio performance,report_generation,high,9,0
+Generate a compliance report for internal audits,report_generation,high,9,0
+Check a financial model for regulatory issues,compliance_check,high,1,0
+Translate a compliance guideline into Spanish,translation,medium,15,2
+Write a Python script to validate customer data,code_generation,medium,0,2
+Write a Python function that validates a 12-digit customer account number using a checksum algorithm.,code_generation,low,0,1
+"Generate the complete Java class structure for processing SWIFT MT103 payment messages, including methods for parsing, validation against nostro accounts, and serialization to JSON.",code_generation,high,0,0
+Create a shell script to backup the transaction logs from the production database server to the archival storage every night at 2 AM.,code_generation,medium,0,2
+Write a Go function to interact with the Kubernetes API to check the health status of our payment gateway pods.,code_generation,high,0,0
+"Generate a Python dataclass for representing a 'Sovereign Gold Bond' (SGB) investment, including issue date, maturity date, and grammage.",code_generation,medium,0,2
+Create a simple HTML and JavaScript form to calculate the potential returns on a Recurring Deposit (RD).,code_generation,low,0,1
+Write a Kotlin function for our Android app to securely store a user's MPIN using the Android Keystore system.,code_generation,high,0,0
+Generate a Python script to connect to our data warehouse and pull daily transaction data into a pandas DataFrame.,code_generation,low,0,1
+Create a Java class to handle token-based authentication for our internal APIs using JWT.,code_generation,medium,0,2
+Write a script to automate the process of setting up a new developer's environment.,code_generation,medium,0,2
+Generate a boilerplate Python Flask application for a new internal microservice.,code_generation,low,0,1
+Generate a Python script that uses OCR to read a scanned cheque and extract the MICR code.,code_generation,high,0,0
+Write a Python script to validate a list of Indian mobile numbers from a text file.,code_generation,low,0,1
+"Generate a function to calculate the credit risk score for a customer based on their age, income, and existing liabilities.",code_generation,high,0,0
+Write a Python script to connect to the BSE website and downloads the closing price of a given stock for the last 30 days.,code_generation,medium,0,2
+Generate a Java function to encrypt a string using AES-256.,code_generation,medium,0,2
+What was the total value of UPI transactions processed yesterday?,data_analysis,low,3,1
+Analyze the trend of credit card defaults over the past five years and correlate it with macroeconomic indicators like inflation and unemployment rates.,data_analysis,high,3,0
+Identify the top 5 branches in the South India region by the number of new fixed deposit accounts opened in Q2 2025.,data_analysis,medium,3,2
+Write a Python script to perform automated A/B testing analysis for two different versions of our 'Apply for Loan' webpage.,data_analysis,high,3,0
+Analyze the adoption rate of our new Video KYC process for NRI customers and compare it to the traditional in-person verification.,data_analysis,medium,3,2
+What is the average ticket size for Gold Loans disbursed from our branches in Tamil Nadu last month?,data_analysis,low,3,1
+Analyze the correlation between a customer's monthly average balance and their likelihood to adopt a new digital product.,data_analysis,high,3,0
+What is the average turnaround time for resolving customer complaints submitted via our mobile app?,data_analysis,medium,3,2
+How many customers have set up recurring payments for their mutual fund SIPs this month?,data_analysis,low,3,1
+Analyze the performance of our machine learning model for fraud detection. What are its current precision and recall scores?,data_analysis,high,3,0
+Analyze the impact of the recent interest rate hike on our fixed deposit portfolio growth.,data_analysis,medium,3,2
+Analyze the effectiveness of our SMS marketing campaigns. What is the average click-through rate?,data_analysis,low,3,1
+Analyze the geographic distribution of our personal loan customers.,data_analysis,medium,3,2
+Analyze the churn rate of our savings account customers and identify the primary reasons for account closure.,data_analysis,high,3,0
+Analyze the usage patterns of our different credit card variants to see which benefits are most utilized by customers.,data_analysis,medium,3,2
+Generate a monthly report of all high-value transactions (over ₹10 lakh) that need to be reported to the Financial Intelligence Unit (FIU).,report_generation,medium,9,2
+Create a simple CSV file listing all employees in the IT department who have not completed their mandatory cybersecurity training.,report_generation,low,9,1
+"Generate the quarterly NPA (Non-Performing Asset) report as per the official RBI circular's format, including provisioning coverage ratio and trend analysis.",report_generation,high,9,0
+"Generate a weekly report on the performance of our chatbot, including the number of queries handled, resolution rate, and escalation rate to human agents.",report_generation,medium,9,2
+Create a report of all MSME clients who are eligible for the new government-backed credit guarantee scheme.,report_generation,medium,9,2
+Generate a simple list of all FASTag activations from the Chennai toll plaza in the last 24 hours.,report_generation,low,9,1
+Generate a report of all dormant accounts that are nearing the escheatment deadline.,report_generation,medium,9,2
+"Create a monthly report detailing the cloud infrastructure costs on AWS, broken down by service and project tag.",report_generation,high,9,0
+List all vendors whose contracts are up for renewal in the next 90 days.,report_generation,low,9,1
+"Create a report on the usage of our corporate banking portal, highlighting the most and least used features.",report_generation,medium,9,2
+Generate a report of all large cash transactions that occurred yesterday at our Hyderabad branches.,report_generation,medium,9,2
+Create a report of all assets that are due for re-verification by the audit team.,report_generation,medium,9,2
+Generate a report of all software licenses that will expire in the next six months.,report_generation,medium,9,2
+Create a report on the carbon footprint of our bank's operations for the annual sustainability report.,report_generation,high,9,0
+Generate a report showing the aging of unresolved customer complaints.,report_generation,medium,9,2
+Summarize this 40-page document on the new RBI digital lending guidelines into a one-page brief for the management team.,text_summarization,high,14,0
+Give me a five-point summary of the attached customer call transcript regarding a disputed transaction.,text_summarization,medium,14,2
+Summarize this internal audit memo about server patch vulnerabilities.,text_summarization,low,14,1
+Summarize the RBI's annual report on 'Trends and Progress of Banking in India' into a 10-slide presentation.,text_summarization,high,14,0
+Provide a summary of customer feedback received through WhatsApp banking for the month of August 2025.,text_summarization,medium,14,2
+"Summarize this 10,000-word research paper on the use of AI in credit scoring.",text_summarization,high,14,0
+Give me the key takeaways from the attached meeting minutes of the Asset Liability Committee (ALM).,text_summarization,medium,14,2
+Summarize this competitive analysis report on the digital offerings of our top 3 rival banks.,text_summarization,medium,14,2
+Summarize the latest circular from the National Payments Corporation of India (NPCI) on UPI regulations.,text_summarization,medium,14,2
+Summarize this legal document outlining a new partnership with a fintech company.,text_summarization,high,14,0
+Summarize this article about blockchain technology's potential impact on trade finance.,text_summarization,medium,14,2
+Summarize this lengthy customer conversation from our support chatbot.,text_summarization,low,14,1
+Summarize the key points of the latest board meeting.,text_summarization,low,14,1
+Summarize this threat intelligence report about a new banking trojan.,text_summarization,medium,14,2
+Which marketing campaign last quarter had the best conversion rate for car loans?,natural_language_query,medium,6,2
+Show me the number of active mobile banking users in Chennai.,natural_language_query,low,6,1
+Find all corporate clients who had a credit rating upgrade in the last six months but whose loan utilization has decreased.,natural_language_query,high,6,0
+Which of our branches in Pune have the highest number of High Net-worth Individual (HNI) accounts?,natural_language_query,medium,6,2
+Show me all agricultural loans disbursed in the state of Punjab in the last quarter.,natural_language_query,medium,6,2
+What is the current Loan-to-Value (LTV) ratio for gold loans?,natural_language_query,low,6,1
+Who are the top 3 relationship managers by the value of new investments brought in last quarter?,natural_language_query,medium,6,2
+How many of our employees have completed the mandatory AML (Anti-Money Laundering) certification?,natural_language_query,low,6,1
+What is the average time taken to approve a personal loan application from submission to disbursal?,natural_language_query,medium,6,2
+How many customers have linked their Aadhaar to their bank account?,natural_language_query,low,6,1
+What is the total value of Gold Loans we have disbursed in the current financial year?,natural_language_query,medium,6,2
+How many of our employees are certified cloud practitioners?,natural_language_query,low,6,1
+What is the phone number for the credit card customer support for lost cards?,natural_language_query,low,6,1
+How many ATMs do we have in Kolkata?,natural_language_query,low,6,1
+What are the working hours for our Ahmedabad main branch?,natural_language_query,low,6,1
+"Write the API documentation for our new '/v2/accounts/{accountId}/balance' endpoint, including response codes for success, not found, and unauthorized access.",technical_documentation,medium,12,2
+"Create a complete architecture diagram and documentation for the proposed Real-Time Fraud Detection system, detailing the Kafka pipeline, Flink processing engine, and the model inference API.",technical_documentation,high,12,0
+Add a docstring to this Python function explaining its parameters and return value.,technical_documentation,low,12,1
+Create a comprehensive guide for our relationship managers on how to pitch our new wealth management products to HNI clients.,technical_documentation,medium,12,2
+Document the standard operating procedure (SOP) for handling a 'Letter of Credit' issuance for an import-export client.,technical_documentation,high,12,0
+"Create a developer onboarding guide that explains our CI/CD pipeline, coding standards, and release process.",technical_documentation,high,12,0
+Document the input fields and validation rules for the new 'Education Loan' application form on our website.,technical_documentation,medium,12,2
+Document our bank's official social media policy for employees.,technical_documentation,low,12,1
+"Create a document explaining the security features of our mobile banking app, such as two-factor authentication and biometric login.",technical_documentation,medium,12,2
+Document the workflow for our internal IT helpdesk ticketing system.,technical_documentation,low,12,1
+Create a document outlining the best practices for secure coding to prevent SQL injection and cross-site scripting.,technical_documentation,high,12,0
+Document our API rate limiting policy for external partners.,technical_documentation,medium,12,2
+Create a document detailing the steps to restore a database from a backup.,technical_documentation,medium,12,2
+Document the firewall rules required for our new application server.,technical_documentation,medium,12,2
+Analyze the Q2 2025 financial statements of XYZ Steel Ltd. and calculate their debt-to-equity ratio and interest coverage ratio.,financial_analysis,medium,5,2
+Perform a discounted cash flow (DCF) valuation for a corporate client to assess their eligibility for a 50 crore term loan.,financial_analysis,high,5,0
+What is the EMI for a ₹40 lakh home loan for a 20-year term at an 8.5% interest rate?,financial_analysis,low,5,1
+Assess the risk profile of issuing a 10 crore Bank Guarantee (BG) for an MSME client in the manufacturing sector.,financial_analysis,high,5,0
+Calculate the projected cash flow for a farm applying for a 5 lakh agri-loan based on their crop cycle and expected yield.,financial_analysis,medium,5,2
+Calculate the Capital to Risk-Weighted Assets Ratio (CRAR) for the bank as of last quarter.,financial_analysis,high,5,0
+A customer's ATM withdrawal failed but the amount was debited. Draft an empathetic response explaining the TAT for automatic reversal and the process for raising a formal complaint if it fails.,customer_support,medium,2,2
+"A customer is angry that their credit card application was rejected. Draft a polite and firm response that explains the decision cannot be overturned immediately, without revealing the confidential credit scoring criteria.",customer_support,high,2,0
+What is our policy on dormant account activation?,customer_support,low,2,1
+A merchant's POS machine is not working and showing 'Batch Upload Failed'. Draft a troubleshooting guide for our on-field support executive to follow.,customer_support,medium,2,2
+A farmer wants to apply for a KCC (Kisan Credit Card). Draft a response explaining the eligibility criteria and required documents in simple terms.,customer_support,low,2,1
+A customer who is an NRI wants to open a new NRE account. Draft a response guiding them through the video KYC process.,customer_support,medium,2,2
+A small business owner is asking about the documents required for an MSME loan. List them clearly.,customer_support,low,2,1
+A customer wants to dispute a charge on their credit card statement. Explain the chargeback process and timelines.,customer_support,medium,2,2
+A customer's family member has passed away. Explain the process for the death claim settlement of their account balance with empathy and clarity.,customer_support,high,2,0
+A customer wants to redeem their mutual fund units. Explain the concept of Net Asset Value (NAV) and how the redemption amount will be calculated.,customer_support,high,2,0
+Scan this home loan application and verify if the applicant's declared income in the form matches the income stated in their attached salary slips and Form 16.,compliance_check,medium,1,2
+Review this proposed marketing email for a new mutual fund to ensure it contains all the mandatory SEBI risk disclaimers.,compliance_check,low,1,1
+Analyze this series of international transactions for customer ID 789123 against AML and KYC regulations to flag any suspicious activity that might indicate structuring.,compliance_check,high,1,0
+Review the terms for our new Gold Loan product to ensure they are compliant with RBI's latest circular on Loan-to-Value (LTV) ratio.,compliance_check,medium,1,2
+Check if the automated social media monitoring tool is correctly flagging posts that could pose a reputational risk to the bank.,compliance_check,high,1,0
+"Review our chatbot's conversation logs to ensure it is not providing any financial advice, which would be a compliance violation.",compliance_check,medium,1,2
+Review our marketing materials for the new investment product to ensure they are compliant with SEBI's advertising code.,compliance_check,medium,1,2
+Check if a new high-risk corporate client appears on any international sanctions lists like the OFAC SDN list.,compliance_check,high,1,0
+Review the privacy policy of a new third-party vendor we are planning to partner with.,compliance_check,medium,1,2
+"Check if our vendor's data security certification (e.g., ISO 27001) is still valid.",compliance_check,low,1,1
+Translate 'Your transaction is successful' into Tamil.,translation,low,15,1
+"Translate this customer support email from Hindi to English, maintaining a formal tone.",translation,medium,15,2
+"Translate the 'Terms and Conditions' section of our new loan agreement from English to Tamil, ensuring all legal terminology is accurately represented.",translation,high,15,0
+Translate 'Your FASTag has been recharged successfully' into Hindi.,translation,low,15,1
+Translate the phrase 'Education loan for studying abroad' into Tamil and Telugu.,translation,medium,15,2
+Translate 'Your loan application is under review' into Hindi.,translation,low,15,1
+"Translate 'This is a system generated message, please do not reply' into the top 8 Indian languages.",translation,high,15,0
+Translate 'Your credit card statement is now available' into Bengali.,translation,low,15,1
+Translate 'Fixed Deposit' and 'Recurring Deposit' into Hindi.,translation,low,15,1
+Translate 'OTP' (One-Time Password) into its full form and then into Hindi.,translation,low,15,1
+What is the sentiment of the sentence: 'I am very happy with the service'?,sentiment_analysis,low,10,1
+"Analyze the sentiment of the attached customer service call transcript. Is the customer's sentiment positive, negative, or neutral overall?",sentiment_analysis,medium,10,2
+Analyze all social media mentions of our bank over the last 24 hours. Identify the prevailing sentiment and summarize the top three reasons for any significant negative sentiment.,sentiment_analysis,high,10,0
+Analyze the sentiment of feedback from our corporate clients regarding the new trade finance portal.,sentiment_analysis,medium,10,2
+Analyze the sentiment of our employees based on the latest anonymous internal survey results.,sentiment_analysis,high,10,0
+Analyze the sentiment of customer calls that were escalated to a manager.,sentiment_analysis,medium,10,2
+Analyze the sentiment of customer conversations mentioning our new interest rates.,sentiment_analysis,medium,10,2
+Analyze the sentiment of our bank's stock performance based on analyst reports from the last quarter.,sentiment_analysis,high,10,0
+Analyze the sentiment of news articles mentioning our CEO in the last month.,sentiment_analysis,medium,10,2
+Analyze the sentiment of a viral tweet that mentions our bank.,sentiment_analysis,medium,10,2
+Analyze the sentiment of a specific politician's speech regarding the banking sector.,sentiment_analysis,high,10,0
+"Draft a short, promotional SMS about our new higher interest rates for fixed deposits.",text_generation,low,13,1
+"Draft a marketing email targeting salaried professionals for our new 'Platinum Plus' credit card, highlighting its travel and lifestyle benefits.",text_generation,medium,13,2
+Write a 500-word blog post for our website titled 'Five Smart Ways to Plan Your Finances for Retirement in India'.,text_generation,high,13,0
+Generate a tweet thread explaining the benefits of investing in Sovereign Gold Bonds (SGBs) vs physical gold.,text_generation,medium,13,2
+Write a blog post titled 'How to choose the right credit card for your lifestyle'.,text_generation,medium,13,2
+Generate an SMS campaign to promote our FASTag product to car loan customers.,text_generation,medium,13,2
+Write a script for a chatbot to answer frequently asked questions about home loans.,text_generation,medium,13,2
+Generate a series of FAQs for our website about the new RBI guidelines on tokenization.,text_generation,medium,13,2
+Write an official circular for internal distribution announcing a new employee stock option plan (ESOP).,text_generation,high,13,0
+Write an apology letter to a customer who experienced a service outage.,text_generation,medium,13,2
+Extract the account number from this string: 'My account number is 012345678901'.,data_extraction,low,4,1
+"From the attached bank statement PDF, extract the opening balance, closing balance, and total debits for the month of July 2025.",data_extraction,medium,4,2
+"Read the attached property deed document (scanned PDF) and extract the names of the owners, the property address, and the total area in square feet.",data_extraction,high,4,0
+Extract the Udyam Registration Number from a scanned business registration certificate.,data_extraction,medium,4,2
+Extract the beneficiary name and IFSC code from a screenshot of a successful transaction.,data_extraction,medium,4,2
+"Extract all the details from a Form 16 PDF, including employer name, employee name, PAN, and TDS amount.",data_extraction,high,4,0
+Extract the GSTIN number from a scanned invoice.,data_extraction,low,4,1
+Extract structured data from a semi-structured email confirming a flight booking.,data_extraction,medium,4,2
+"From a scanned PDF of a passport, extract the name, passport number, and date of expiry.",data_extraction,medium,4,2
+Extract the vehicle registration number from an image of a number plate.,data_extraction,medium,4,2
+Extract the case number and next hearing date from a legal summons document.,data_extraction,high,4,0
+Create a rule to automatically send an email notification when a new file is uploaded to the 'TradeSettlements' SharePoint folder.,process_automation,low,8,1
+"Write a script that pulls the daily currency exchange rates from the RBI API, formats them into a CSV file, and emails it to the 'forex-team' distribution list.",process_automation,medium,8,2
+"Design a complete automation workflow for employee expense reimbursement. The workflow should allow an employee to submit a PDF receipt, use OCR to extract the amount and vendor, route it to their manager for approval, and upon approval, trigger a payment instruction to the finance system.",process_automation,high,8,0
+Design an automation that sends a WhatsApp notification to a customer once their Video KYC session is successfully completed.,process_automation,medium,8,2
+Automate the process of flagging loan applications where the applicant's address is in a known high-risk area.,process_automation,high,8,0
+Automate the task of sending a monthly account statement to all our customers via email.,process_automation,medium,8,2
+Automate the daily process of reconciling ATM cash balances across the city.,process_automation,high,8,0
+Automate the approval workflow for employee travel requests.,process_automation,low,8,1
+Automate the process of assigning a relationship manager to a new HNI client based on their location and investment profile.,process_automation,high,8,0
+Automate the process of checking for and installing software patches on our servers every weekend.,process_automation,medium,8,2
+Automate the process of sending birthday wishes to our customers via email and SMS.,process_automation,low,8,1
+Explain what a 'Nominee' is in a savings account.,policy_explanation,low,7,1
+"Explain the difference between a NEFT and an RTGS transfer, including transfer limits and settlement times.",policy_explanation,medium,7,2
+"A customer wants to know why they are being charged a 'non-maintenance of average monthly balance' fee even though they had a large fixed deposit. Explain the bank's policy on how different account types are treated for AMB calculations, citing the relevant clause from our T&Cs.",policy_explanation,high,7,0
+Explain the process and benefits of linking a Public Provident Fund (PPF) account with our savings account.,policy_explanation,medium,7,2
+Explain what a 'collateral' is in the context of a secured loan.,policy_explanation,low,7,1
+Explain the difference between a 'Demat' account and a 'Trading' account.,policy_explanation,medium,7,2
+Explain what a 'moratorium period' is for an education loan.,policy_explanation,medium,7,2
+Explain the concept of 'co-borrower' and 'guarantor' in a loan application.,policy_explanation,medium,7,2
+"Explain the different types of mutual funds (equity, debt, hybrid) in simple terms.",policy_explanation,medium,7,2
+Explain what 'phishing' is and provide three tips for our customers to identify and avoid it.,policy_explanation,medium,7,2
+Write a SQL query to select all customers from the 'Customers' table who live in Chennai.,sql_query,low,11,1
+Write a SQL query to find the total loan amount disbursed per branch for the last month. Join the 'Loans' and 'Branches' tables.,sql_query,medium,11,2
+Write a SQL query to find the top 3 customers in each state by total transaction value for the current year. Use a window function like RANK() or DENSE_RANK().,sql_query,high,11,0
+Write a SQL query to find all agricultural loan accounts that are eligible for the government's interest subvention scheme in the current fiscal year.,sql_query,high,11,0
+Write a SQL query to find customers who have a high credit score (>780) but do not have any active loans with us.,sql_query,medium,11,2
+Write a SQL query to find all transactions that originated from IP addresses outside of India.,sql_query,medium,11,2
+Write a SQL query to get a list of all customers who have not logged into the netbanking portal in the last 180 days.,sql_query,medium,11,2
+Write a SQL query to find the customer with the highest number of failed login attempts today.,sql_query,medium,11,2
+Write a SQL query to find the busiest hour of the day for transactions at our main branch.,sql_query,medium,11,2
+"Write a SQL query to identify duplicate customer records based on a combination of name, date of birth, and PAN number.",sql_query,high,11,0
+Write a SQL query to find all customers who have an active loan and have missed more than two EMI payments consecutively.,sql_query,high,11,0
+Write a SQL query to find the total number of new accounts opened per month in the last year.,sql_query,medium,11,2

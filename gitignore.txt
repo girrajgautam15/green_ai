@@ -1,0 +1,28 @@
+# Ignore PyTorch model files
+*.pt
+*.pth
+*.safetensors
+
+# Ignore any other large/binary artifacts
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Ignore data files (optional)
+*.tsv
+*.parquet
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+.venv/
+env/
+venv/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/

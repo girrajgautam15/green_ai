@@ -1,0 +1,297 @@
+# Green AI - Model Configuration Profiles (Version 3)
+# Each model is standardized to two regions: Singapore (low latency) and US East (high latency)
+# This provides a clear choice for the scoring function.
+# All metrics are per 1 million tokens. Latency is estimated TTFT in ms from Chennai, India.
+# Last Updated: 2025-08-30
+
+model_profiles:
+  - model_name: "gpt-4.1"
+    provider: "OpenAI"
+    region: "Singapore (asia-southeast1)"
+    latency_ms_ttft: 85  # <<< LOW LATENCY: Geographically close
+    co2_footprint_g_per_million_tokens: 195 # Singapore's grid
+    pricing:
+      input_per_million_tokens: 4.00
+      output_per_million_tokens: 12.00
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - all
+      high: # Specialized for deep reasoning, coding, and complex instructions
+        - code_generation
+        - financial_modeling
+        - process_automation
+        - risk_assessment
+        - technical_documentation
+        - compliance_check
+  - model_name: "gpt-4.1"
+    provider: "OpenAI"
+    region: "US East (N. Virginia)"
+    latency_ms_ttft: 220 # <<< HIGH LATENCY: Geographically distant
+    co2_footprint_g_per_million_tokens: 180 # US East grid
+    pricing:
+      input_per_million_tokens: 4.00
+      output_per_million_tokens: 12.00
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - all
+      high:
+        - code_generation
+        - financial_modeling
+        - process_automation
+        - risk_assessment
+        - technical_documentation
+        - compliance_check
+
+  - model_name: "gpt-4.1-mini"
+    provider: "OpenAI"
+    region: "Singapore (asia-southeast1)"
+    latency_ms_ttft: 60
+    co2_footprint_g_per_million_tokens: 105
+    pricing:
+      input_per_million_tokens: 0.20
+      output_per_million_tokens: 0.60
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - code_generation
+        - sql_query
+        - data_extraction
+        - text_summarization
+        - sentiment_analysis
+        - translation
+        - text_generation
+        - natural_language_query
+      high:
+        []
+  - model_name: "gpt-4.1-mini"
+    provider: "OpenAI"
+    region: "US East (N. Virginia)"
+    latency_ms_ttft: 150
+    co2_footprint_g_per_million_tokens: 95
+    pricing:
+      input_per_million_tokens: 0.20
+      output_per_million_tokens: 0.60
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - code_generation
+        - sql_query
+        - data_extraction
+        - text_summarization
+        - sentiment_analysis
+        - translation
+        - text_generation
+        - natural_language_query
+      high:
+        []
+
+  - model_name: "gemini-2.5-pro"
+    provider: "Google"
+    region: "Singapore (asia-southeast1)"
+    latency_ms_ttft: 80
+    co2_footprint_g_per_million_tokens: 165
+    pricing:
+      input_per_million_tokens: 3.50
+      output_per_million_tokens: 10.50
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - all
+      high: # Specialized for data-centric tasks and structured generation
+        - data_analysis
+        - sql_query
+        - data_extraction
+        - report_generation
+        - financial_analysis
+        - fraud_detection
+  - model_name: "gemini-2.5-pro"
+    provider: "Google"
+    region: "US East (N. Virginia)"
+    latency_ms_ttft: 230
+    co2_footprint_g_per_million_tokens: 175
+    pricing:
+      input_per_million_tokens: 3.50
+      output_per_million_tokens: 10.50
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - all
+      high:
+        - data_analysis
+        - sql_query
+        - data_extraction
+        - report_generation
+        - financial_analysis
+        - fraud_detection
+
+  - model_name: "gemini-2.5-flash"
+    provider: "Google"
+    region: "Singapore (asia-southeast1)"
+    latency_ms_ttft: 50
+    co2_footprint_g_per_million_tokens: 85
+    pricing:
+      input_per_million_tokens: 0.18
+      output_per_million_tokens: 0.54
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - text_summarization
+        - sentiment_analysis
+        - translation
+        - text_generation
+        - natural_language_query
+        - customer_support
+      high:
+        []
+  - model_name: "gemini-2.5-flash"
+    provider: "Google"
+    region: "US East (N. Virginia)"
+    latency_ms_ttft: 140
+    co2_footprint_g_per_million_tokens: 80
+    pricing:
+      input_per_million_tokens: 0.18
+      output_per_million_tokens: 0.54
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - text_summarization
+        - sentiment_analysis
+        - translation
+        - text_generation
+        - natural_language_query
+        - customer_support
+      high:
+        []
+
+  - model_name: "claude-3.7-sonnet"
+    provider: "Anthropic"
+    region: "Singapore (asia-southeast1)"
+    latency_ms_ttft: 90
+    co2_footprint_g_per_million_tokens: 170
+    pricing:
+      input_per_million_tokens: 3.00
+      output_per_million_tokens: 15.00
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - all
+      high: # Strong at creative writing, policy, and nuanced text understanding
+        - report_generation
+        - text_summarization
+        - risk_assessment
+        - policy_explanation
+        - text_generation
+        - customer_support
+        - technical_documentation
+  - model_name: "claude-3.7-sonnet"
+    provider: "Anthropic"
+    region: "US East (N. Virginia)"
+    latency_ms_ttft: 200
+    co2_footprint_g_per_million_tokens: 150
+    pricing:
+      input_per_million_tokens: 3.00
+      output_per_million_tokens: 15.00
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - all
+      high:
+        - report_generation
+        - text_summarization
+        - risk_assessment
+        - policy_explanation
+        - text_generation
+        - customer_support
+        - technical_documentation
+
+  - model_name: "mixtral-8x22b"
+    provider: "Mistral"
+    region: "Singapore (asia-southeast1)"
+    latency_ms_ttft: 100
+    co2_footprint_g_per_million_tokens: 185
+    pricing:
+      input_per_million_tokens: 2.00
+      output_per_million_tokens: 6.00
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - all
+      high:
+        - code_generation
+        - sql_query
+        - data_analysis
+        - technical_documentation
+        - translation
+  - model_name: "mixtral-8x22b"
+    provider: "Mistral"
+    region: "US East (N. Virginia)"
+    latency_ms_ttft: 240
+    co2_footprint_g_per_million_tokens: 160 # MoE architecture is highly efficient
+    pricing:
+      input_per_million_tokens: 2.00
+      output_per_million_tokens: 6.00
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - all
+      high:
+        - code_generation
+        - sql_query
+        - data_analysis
+        - technical_documentation
+        - translation
+
+  - model_name: "llama-3.1-405b"
+    provider: "Meta"
+    region: "Singapore (asia-southeast1)"
+    latency_ms_ttft: 120
+    co2_footprint_g_per_million_tokens: 280
+    pricing:
+      input_per_million_tokens: 3.80
+      output_per_million_tokens: 11.50
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - all
+      high: # Top-tier open model, a powerful generalist for complex tasks
+        - code_generation
+        - data_analysis
+        - financial_analysis
+        - financial_modeling
+        - report_generation
+        - process_automation
+  - model_name: "llama-3.1-405b"
+    provider: "Meta"
+    region: "US East (N. Virginia)"
+    latency_ms_ttft: 350 # Larger models can have higher latency
+    co2_footprint_g_per_million_tokens: 250
+    pricing:
+      input_per_million_tokens: 3.80
+      output_per_million_tokens: 11.50
+    complexity_label_mapping:
+      low:
+        - all
+      medium:
+        - all
+      high:
+        - code_generation
+        - data_analysis
+        - financial_analysis
+        - financial_modeling
+        - report_generation
+        - process_automation
